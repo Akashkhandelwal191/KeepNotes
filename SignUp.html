@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep Notes</title>
+  <link rel="icon" href="Images/note.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="Css/style2.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="imgBx">
+      <img src="images/img2.jpg" alt="">
+      <h2 id="heading"> <span class="animate__animated animate__fadeInLeftBig  animate__delay-2s animate__infinite">Keep Your Notes </span> 
+        <span class="animate__animated animate__fadeInRightBig  animate__delay-2s animate__infinite" >Safe And Secure</span>
+      </h2>
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Sign Up</h2>
+        <form onsubmit="return Register()" action="SignIn.html" method="POST">
+          <div class="inputBx">
+            <span>Username</span>
+            <input type="text" id="formtxt" name="" minlength="4" maxlength="15" required>
+          </div>
+
+          <div class="inputBx">
+            <span>Email</span>
+            <input type="email" id="formemail" name="" required>
+          </div>
+
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password" id="formpass" name="" minlength="4" maxlength="8" required>
+          </div>
+
+
+          <div class="inputBx">
+            <input type="submit" value="Sign Up" name="">
+          </div>
+
+          <div class="inputBx">
+            <p>Already User? <a href="SignIn.html">Sign In</a> </p>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

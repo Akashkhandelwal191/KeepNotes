@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("..//images/back2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+}
+.card{
+    box-shadow:0 0 20px rgba(0,0,0,0.9);
+}
+
+.form-control:hover{
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+h1{
+    text-align: center;
+    /* background-color: white; */
+    color:#f5f6fa;
+    font-size: 3rem;
+
+}   
+.navbar{
+    background-color: #0a183d;
+    /* color:white; */
+}
+.footer {
+    background-color: #0a183d;
+    color: white;
+   
+    height:5rem;
+    text-align: center;
+    width: 100vw;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.footer h2,h3{
+    font-size: 1rem;
+}
+
+.mark{
+        
+    display: inline-block;
+    border-radius:0%;
+    width:0px;
+    height: 0px;
+    border: none;
+    
+    
+
+}
+.far{
+    /* background-color: blue; */
+    border-radius: 200%;
+}
+
+.done{
+    background-color: yellow;
+}
+
+.btn-signout{
+    background-color:  #e91e63;
+}
+
+.btn-signout:hover{
+    background-color: #ff4584;;
+}
+
+.form-control{
+   caret-color: red;
+}

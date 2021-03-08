@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Notes</title>
+    <link rel="icon" href="Images/note.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+     
+     *{
+         margin:0;
+         padding: 0;
+         box-sizing: border-box;
+         
+     }
+     html{
+         overflow-x: hidden;
+     }
+     body{
+         height: 100vh;
+         width: 100vw;
+         display: grid;
+         place-items: center;
+         background-color: #0a183d;
+    
+         box-shadow:0 0 10px 5px rgba(255,255,255,0.5) inset;
+     }
+     .image{
+         /* border:2px solid red; */
+         text-align: center
+     }
+    
+    img{
+        box-shadow:0 0 10px 5px rgba(255,255,255,0.5);
+        border-radius: 50%;
+    }
+    h3{
+        margin-top: 10px;
+        color:white;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        font-family: 'Noto Sans SC', sans-serif;
+    }
+
+    .btn3{
+        padding:10px 25px;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        color: #fff;
+        border: 1px solid white;
+    }
+
+    .btn3::after{
+        content:"";
+        width: 0%;
+        height:100%;
+        background-color: red;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        transition: all 0.5s linear;
+        
+    }
+    .btn3:hover{
+        color: #fff;
+    }
+    .btn3:hover::after{
+       /* transform: scale(1.1); */
+       width:100%;
+
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="image">
+
+    <div class="animate__animated animate__zoomIn animate__delay-1s animate__repeat-2">
+     <img src="images/Notes.jpg" alt="">
+    </div>
+    <h3 class="animate__animated animate__zoomInDown animate__delay-1s animate__repeat-2">Keep Your Notes Safe And Secure</h3>
+    <a href="SignIn.html" type="button" class="btn  btn3 my-2 animate__animated animate__bounceInUp animate__delay-3s">Login</a>
+    <br>
+    <span class="text-white  animate__animated animate__bounceInUp animate__delay-3s"> Don't have an account? <a href="SignUp.html" class="text-danger">Sign Up</a></span>
+
+    <div id="imp2" class="my-3 text-white animate__animated animate__backInUp animate__delay-4s">Design By Akash Khandelwal</div>
+
+    </div>
+   
+    
+       
+    
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+     crossorigin="anonymous"></script>
+
+     <script>
+      setTimeout(function(){
+         document.getElementById('imp2').style.display = "none";
+      },9000);
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx{
+   position: relative;
+   width: 50%;
+   height: 100vh;
+}
+
+section .imgBx::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg,#e91e63,#03a9f4);
+  z-index: 1;
+  mix-blend-mode: screen;
+
+
+}
+
+section .imgBx img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .imgBx #heading{
+    position: absolute;
+    top:30%;
+    left:15%;
+    color: #ffffff;
+    /* color:#40407a; */
+    z-index: 1;
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+    line-height: 5rem;
+    font-weight: 600;
+    
+}
+section .imgBx h2{
+    text-shadow:0 0 20px  rgba(0,0,0,1);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+section .contentBx{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+  
+
+}
+
+section .contentBx .formBx{
+
+    width: 50%;
+}
+
+section .contentBx .formBx h2{
+    color:#607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:#607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx input{
+
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+    color:#607d8b;
+    border:1px solid #607d8b;
+}
+
+
+section .contentBx .formBx .inputBx input[type="submit"]{
+
+    background: #ff4584;
+    color:#fff;
+    border:none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background-color:  #e91e63;;
+}
+
+section .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color:#607d8b;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+section .contentBx .formBx p{
+    color:#607d8b;
+}
+section .contentBx .formBx p a{
+    color: #e91e63;
+}
+
+
+@media screen and (max-width:768px)
+{
+    
+section .imgBx{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+ }
+  section .contentBx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+
+  section .contentBx .formBx{
+      width: 100%;
+      padding: 40px;
+      background: rgba(255,255,255 , 0.9);
+      margin: 50px;
+  }
+
+  section .imgBx #heading{
+
+    top:1%;
+    left:15%;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    
+   }
+}
+
+@media screen and (max-width:375px)
+{
+
+    section .imgBx #heading{
+
+        top:1%;
+        left:10%;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+        font-weight: 600;
+
+        
+       }
+
+}

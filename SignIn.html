@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep Notes</title>
+  <link rel="icon" href="Images/note.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Bootstrap CSS -->
+
+
+  <link rel="stylesheet" href="Css/style2.css">
+  <script>
+    if (sessionStorage.getItem('status') != null) {
+      window.location.href = "home.html";
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <section>
+    <div class="imgBx">
+      <img src="images/img2.jpg" alt="">
+      <h2 id="heading"> <span class="animate__animated animate__fadeInLeftBig  animate__delay-2s animate__infinite">Keep Your Notes </span> 
+        <span class="animate__animated animate__fadeInRightBig  animate__delay-2s animate__infinite" >Safe And Secure</span>
+      </h2>
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Login</h2>
+        <form action="home.html" onsubmit="return Validate()" method="POST">
+          <div class="inputBx">
+            <span>Username</span>
+            <input type="text" id="formtxt" name="" required>
+          </div>
+
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password" id="formpass" name="" required>
+          </div>
+
+          <div class="remember">
+            <label for=""><input type="checkbox" name="">Remember me</label>
+          </div>
+
+          <div class="inputBx">
+            <input type="submit" value="Sign In" name="">
+          </div>
+
+          <div class="inputBx">
+            <p>Don't have an account? <a href="SignUp.html">Sign Up</a> </p>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
